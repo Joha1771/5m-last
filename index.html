@@ -1,0 +1,1434 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Центр Новостроек в Тюмени</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="/src/style.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-montserrat bg-white">
+    <header
+      class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
+    >
+      <div class="flex items-center gap-8">
+        <div class="flex gap-[8px] items-center justify-center">
+          <img src="/public/logo.svg" alt="" />
+          <img src="/public/logo-text.svg" alt="" />
+        </div>
+        <nav class="hidden md:flex gap-6 text-[#222222] text-sm">
+          <a href="#">Главная</a>
+          <a href="#">Все ЖК Тюмени</a>
+          <a href="#">Карта новостроек</a>
+          <a href="#">О компании</a>
+        </nav>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <span class="font-bold text-[#DC3F3F]">8 800 000 00 00</span>
+        <div class="flex gap-2">
+          <img src="/public/vk.svg" alt="">
+          <img src="/public/wa.svg" alt="">
+          <img src="/public/tg.svg" alt="">
+        </div>
+        <button
+          class="border border-[#DC3F3F] text-[#DC3F3F] px-6 py-2 rounded-lg hover:bg-[#DC3F3F] hover:text-white transition"
+        >
+          Перезвоните мне
+        </button>
+      </div>
+    </header>
+
+    <section class="relative h-[500px] overflow-hidden">
+      <div
+        class="absolute inset-0 bg-[url('./public/hero-bg.png')] bg-no-repeat bg-cover bg-center"
+      ></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center"
+      >
+        <div class="container mx-auto">
+          <div
+            class="bg-[#ffffff50] backdrop-blur-sm pr-[100px] pl-[50px] py-[80px] rounded-2xl max-w-md shadow-2xl"
+          >
+            <h1 class="text-4xl font-bold text-[#222222] mb-6 leading-tight">
+              Все новостройки<br />Тюмени
+            </h1>
+            <button
+              class="px-8 py-3 bg-[#DC3F3F] text-white rounded-lg hover:bg-[#C02F2F] transition shadow-lg"
+            >
+              Записаться на экскурсию
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-6 border-b bg-white sticky top-0 z-10 shadow-sm">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap items-center gap-4 ">
+          <button
+            class="px-6 py-2 rounded-[8px] border-2 border-[#DC3F3F] text-[#DC3F3F] bg-[#DC3F3F]/5 font-medium"
+          >
+            Жилая ✕
+          </button>
+          <button
+            class="px-6 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition"
+          >
+            Коммерческая
+          </button>
+          <button
+            class="px-6 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition"
+          >
+            Паркинги
+          </button>
+          <button
+            class="px-6 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition"
+          >
+            Кладовые
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-8 ">
+      <div class="container mx-auto">
+        <div class="">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6  rounded-[8px] border border-[#A8A8A8] p-6">
+            <div>
+              <label class="block text-sm text-[#A8A8A8] mb-2 font-medium"
+                >Комнатность</label
+              >
+              <div class="flex gap-2">
+                <button
+                  class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+                >
+                  С
+                </button>
+                <button
+                  class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+                >
+                  1
+                </button>
+                <button
+                  class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+                >
+                  2
+                </button>
+                <button
+                  class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+                >
+                  3
+                </button>
+                <button
+                  class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+                >
+                  4+
+                </button>
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm text-[#A8A8A8] mb-2 font-medium"
+                >Цена, млн руб</label
+              >
+              <div class="space-y-2">
+                <input
+                  type="range"
+                  min="3.2"
+                  max="121.4"
+                  value="3.2"
+                  class="w-full accent-[#DC3F3F]"
+                />
+                <div class="flex justify-between text-xs text-[#222222]">
+                  <span>от 3,2</span>
+                  <span>до 121,4</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm text-[#A8A8A8] mb-2 font-medium"
+                >Срок сдачи</label
+              >
+              <div class="flex gap-2 flex-wrap">
+                <button
+                  class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+                >
+                  Сдан
+                </button>
+                <button
+                  class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+                >
+                  2023
+                </button>
+                <button
+                  class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+                >
+                  2024
+                </button>
+                <button
+                  class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+                >
+                  2025+
+                </button>
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm text-[#A8A8A8] mb-2 font-medium"
+                >Отделка</label
+              >
+              <div class="flex gap-2 flex-wrap">
+                <button
+                  class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm whitespace-nowrap"
+                >
+                  Без отделки
+                </button>
+                <button
+                  class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm whitespace-nowrap"
+                >
+                  С отделкой
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm text-[#A8A8A8] mb-2 font-medium"
+                >Мебировка</label
+              >
+              <div class="flex gap-2 flex-wrap">
+                <button
+                  class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+                >
+                  White box
+                </button>
+                <button
+                  class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+                >
+                  С кухней
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-6 ">
+            <span class="text-sm text-[#A8A8A8] mr-4 font-medium">Класс</span>
+            <div class="inline-flex gap-3 flex-wrap mt-2">
+              <button
+                class="px-6 py-2 rounded-[8px] border-2 border-[#DC3F3F] text-[#DC3F3F] bg-[#DC3F3F]/5 font-medium"
+              >
+                Эконом ✕
+              </button>
+              <button
+                class="px-6 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition"
+              >
+                Комфорт
+              </button>
+              <button
+                class="px-6 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition"
+              >
+                Бизнес
+              </button>
+              <button
+                class="px-6 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition"
+              >
+                Элит
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-6 ">
+            <span class="text-sm text-[#A8A8A8] mr-4 font-medium">Районы</span>
+            <div class="inline-flex flex-wrap gap-3 mt-2">
+              <button
+                class="px-4 py-2 rounded-[8px] border-2 border-[#DC3F3F] text-[#DC3F3F] bg-[#DC3F3F]/5 text-sm font-medium"
+              >
+                Док ✕
+              </button>
+              <button
+                class="px-4 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+              >
+                Центр
+              </button>
+              <button
+                class="px-4 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+              >
+                Лесобаза
+              </button>
+              <button
+                class="px-4 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+              >
+                Заречный 1 / 2 / 3
+              </button>
+              <button
+                class="px-4 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+              >
+                Заречный 5
+              </button>
+              <button
+                class="px-4 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+              >
+                Мыс / ММС / Ватутина / Матмассы
+              </button>
+              <button
+                class="px-4 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+              >
+                Тюменская Слобода / Комарово парк
+              </button>
+              <button
+                class="px-4 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+              >
+                Дударева / Дербышки
+              </button>
+              <button
+                class="px-4 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+              >
+                Дом обороны / Рощино
+              </button>
+              <button
+                class="px-4 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+              >
+                Южный мкр / Восточный
+              </button>
+              <button
+                class="px-4 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+              >
+                Московский тракт / Плеханово
+              </button>
+              <button
+                class="px-4 py-2 rounded-[8px] border-2 border-[#A8A8A8] text-[#A8A8A8] hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
+              >
+                Червишевский тракт / Патрушева
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-white">
+      <div class="container mx-auto">
+        <div class="space-y-8">
+          <div
+            class="bg-white rounded-2xl shadow-primary overflow-hidden border border-gray-100"
+          >
+            <div class="grid lg:grid-cols-2 gap-0">
+
+              <div class="flex flex-col gap-[10px] items-center justify-center h-80 lg:h-auto justify-center">
+                <img src="/public/card1.png" alt="" class="w-full">
+                 <div class="flex flex-wrap gap-3 mb-6">
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/cart.svg" alt=""> Продукты 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/book.svg" alt=""> Образование 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/medicine.svg" alt=""> Медицина 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/ball.svg" alt=""> Спорт 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/play.svg" alt=""> Развлечения 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/tree.svg" alt=""> Парки 6
+                  </div>
+                </div>
+              </div>
+
+             <div>
+              <div class="p-8 flex justify-between">
+                <div>
+                <h3 class="text-3xl font-bold text-[#222222] mb-2">
+                  ЖК Чаркова 72
+                </h3>
+                <p class="text-[#DC3F3F] text-sm mb-6 font-medium">
+                  100 квартир от застройщика «Астон»
+                </p>
+                </div>
+                <div>
+                <div class="mb-6">
+                  <p class="text-4xl font-bold text-[#222222]">
+                    от 4 377 600 ₽
+                  </p>
+                  <p class="text-sm text-[#A8A8A8] mt-1">
+                    В ипотеку от 13 760 ₽ / мес
+                  </p>
+                </div>
+
+                <p class="text-sm text-[#222222] mb-6 font-medium">
+                  3 квартал 2024 — 3 квартал 2025
+                </p>
+                </div>
+                </div>
+
+                <div class="space-y-3 mb-6 p-8">
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">Студии</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">1-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">2-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">3-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium"
+                      >4-комнатные +</span
+                    >
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center p-8">
+                <p class="text-sm text-[#A8A8A8] mb-6">
+                   Тюмень, Чаркова 72 — 1.1
+                </p>
+
+                <button
+                  class=" py-3 px-[20px] bg-[#DC3F3F] text-white rounded-lg hover:bg-[#C02F2F] transition font-semibold shadow-lg"
+                >
+                  Подробнее
+                </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-2xl shadow-primary overflow-hidden border border-gray-100"
+          >
+            <div class="grid lg:grid-cols-2 gap-0">
+
+              <div class="flex flex-col gap-[10px] items-center justify-center h-80 lg:h-auto justify-center">
+                <img src="/public/card1.png" alt="" class="w-full">
+                 <div class="flex flex-wrap gap-3 mb-6">
+                  <!-- Комментарий: Вставить иконки для удобств -->
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/cart.svg" alt=""> Продукты 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/book.svg" alt=""> Образование 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/medicine.svg" alt=""> Медицина 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/ball.svg" alt=""> Спорт 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/play.svg" alt=""> Развлечения 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/tree.svg" alt=""> Парки 6
+                  </div>
+                </div>
+              </div>
+
+             <div>
+              <div class="p-8 flex justify-between">
+                <div>
+                <h3 class="text-3xl font-bold text-[#222222] mb-2">
+                  ЖК Чаркова 72
+                </h3>
+                <p class="text-[#DC3F3F] text-sm mb-6 font-medium">
+                  100 квартир от застройщика «Астон»
+                </p>
+                </div>
+                <div>
+                <div class="mb-6">
+                  <p class="text-4xl font-bold text-[#222222]">
+                    от 4 377 600 ₽
+                  </p>
+                  <p class="text-sm text-[#A8A8A8] mt-1">
+                    В ипотеку от 13 760 ₽ / мес
+                  </p>
+                </div>
+
+                <p class="text-sm text-[#222222] mb-6 font-medium">
+                  3 квартал 2024 — 3 квартал 2025
+                </p>
+                </div>
+                </div>
+
+                <div class="space-y-3 mb-6 p-8">
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">Студии</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">1-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">2-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">3-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium"
+                      >4-комнатные +</span
+                    >
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center p-8">
+                <p class="text-sm text-[#A8A8A8] mb-6">
+                   Тюмень, Чаркова 72 — 1.1
+                </p>
+
+                <button
+                  class=" py-3 px-[20px] bg-[#DC3F3F] text-white rounded-lg hover:bg-[#C02F2F] transition font-semibold shadow-lg"
+                >
+                  Подробнее
+                </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-2xl shadow-primary overflow-hidden border border-gray-100"
+          >
+            <div class="grid lg:grid-cols-2 gap-0">
+
+              <div class="flex flex-col gap-[10px] items-center justify-center h-80 lg:h-auto justify-center">
+                <img src="/public/card1.png" alt="" class="w-full">
+                 <div class="flex flex-wrap gap-3 mb-6">
+
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/cart.svg" alt=""> Продукты 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/book.svg" alt=""> Образование 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/medicine.svg" alt=""> Медицина 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/ball.svg" alt=""> Спорт 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/play.svg" alt=""> Развлечения 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/tree.svg" alt=""> Парки 6
+                  </div>
+                </div>
+              </div>
+
+             <div>
+              <div class="p-8 flex justify-between">
+                <div>
+                <h3 class="text-3xl font-bold text-[#222222] mb-2">
+                  ЖК Чаркова 72
+                </h3>
+                <p class="text-[#DC3F3F] text-sm mb-6 font-medium">
+                  100 квартир от застройщика «Астон»
+                </p>
+                </div>
+                <div>
+                <div class="mb-6">
+                  <p class="text-4xl font-bold text-[#222222]">
+                    от 4 377 600 ₽
+                  </p>
+                  <p class="text-sm text-[#A8A8A8] mt-1">
+                    В ипотеку от 13 760 ₽ / мес
+                  </p>
+                </div>
+
+                <p class="text-sm text-[#222222] mb-6 font-medium">
+                  3 квартал 2024 — 3 квартал 2025
+                </p>
+                </div>
+                </div>
+
+                <div class="space-y-3 mb-6 p-8">
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">Студии</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">1-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">2-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">3-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium"
+                      >4-комнатные +</span
+                    >
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center p-8">
+                <p class="text-sm text-[#A8A8A8] mb-6">
+                   Тюмень, Чаркова 72 — 1.1
+                </p>
+
+                <button
+                  class=" py-3 px-[20px] bg-[#DC3F3F] text-white rounded-lg hover:bg-[#C02F2F] transition font-semibold shadow-lg"
+                >
+                  Подробнее
+                </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-2xl shadow-primary overflow-hidden border border-gray-100"
+          >
+            <div class="grid lg:grid-cols-2 gap-0">
+
+              <div class="flex flex-col gap-[10px] items-center justify-center h-80 lg:h-auto justify-center">
+                <img src="/public/card1.png" alt="" class="w-full">
+                 <div class="flex flex-wrap gap-3 mb-6">
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/cart.svg" alt=""> Продукты 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/book.svg" alt=""> Образование 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/medicine.svg" alt=""> Медицина 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/ball.svg" alt=""> Спорт 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/play.svg" alt=""> Развлечения 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/tree.svg" alt=""> Парки 6
+                  </div>
+                </div>
+              </div>
+
+             <div>
+              <div class="p-8 flex justify-between">
+                <div>
+                <h3 class="text-3xl font-bold text-[#222222] mb-2">
+                  ЖК Чаркова 72
+                </h3>
+                <p class="text-[#DC3F3F] text-sm mb-6 font-medium">
+                  100 квартир от застройщика «Астон»
+                </p>
+                </div>
+                <div>
+                <div class="mb-6">
+                  <p class="text-4xl font-bold text-[#222222]">
+                    от 4 377 600 ₽
+                  </p>
+                  <p class="text-sm text-[#A8A8A8] mt-1">
+                    В ипотеку от 13 760 ₽ / мес
+                  </p>
+                </div>
+
+                <p class="text-sm text-[#222222] mb-6 font-medium">
+                  3 квартал 2024 — 3 квартал 2025
+                </p>
+                </div>
+                </div>
+
+                <div class="space-y-3 mb-6 p-8">
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">Студии</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">1-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">2-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">3-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium"
+                      >4-комнатные +</span
+                    >
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center p-8">
+                <p class="text-sm text-[#A8A8A8] mb-6">
+                   Тюмень, Чаркова 72 — 1.1
+                </p>
+
+                <button
+                  class=" py-3 px-[20px] bg-[#DC3F3F] text-white rounded-lg hover:bg-[#C02F2F] transition font-semibold shadow-lg"
+                >
+                  Подробнее
+                </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-2xl shadow-primary overflow-hidden border border-gray-100"
+          >
+            <div class="grid lg:grid-cols-2 gap-0">
+
+              <div class="flex flex-col gap-[10px] items-center justify-center h-80 lg:h-auto justify-center">
+                <img src="/public/card1.png" alt="" class="w-full">
+                 <div class="flex flex-wrap gap-3 mb-6">
+
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/cart.svg" alt=""> Продукты 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/book.svg" alt=""> Образование 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/medicine.svg" alt=""> Медицина 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/ball.svg" alt=""> Спорт 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/play.svg" alt=""> Развлечения 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/tree.svg" alt=""> Парки 6
+                  </div>
+                </div>
+              </div>
+
+             <div>
+              <div class="p-8 flex justify-between">
+                <div>
+                <h3 class="text-3xl font-bold text-[#222222] mb-2">
+                  ЖК Чаркова 72
+                </h3>
+                <p class="text-[#DC3F3F] text-sm mb-6 font-medium">
+                  100 квартир от застройщика «Астон»
+                </p>
+                </div>
+                <div>
+                <div class="mb-6">
+                  <p class="text-4xl font-bold text-[#222222]">
+                    от 4 377 600 ₽
+                  </p>
+                  <p class="text-sm text-[#A8A8A8] mt-1">
+                    В ипотеку от 13 760 ₽ / мес
+                  </p>
+                </div>
+
+                <p class="text-sm text-[#222222] mb-6 font-medium">
+                  3 квартал 2024 — 3 квартал 2025
+                </p>
+                </div>
+                </div>
+                <div class="space-y-3 mb-6 p-8">
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">Студии</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">1-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">2-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">3-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium"
+                      >4-комнатные +</span
+                    >
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center p-8">
+                <p class="text-sm text-[#A8A8A8] mb-6">
+                   Тюмень, Чаркова 72 — 1.1
+                </p>
+
+                <button
+                  class=" py-3 px-[20px] bg-[#DC3F3F] text-white rounded-lg hover:bg-[#C02F2F] transition font-semibold shadow-lg"
+                >
+                  Подробнее
+                </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-2xl shadow-primary overflow-hidden border border-gray-100"
+          >
+            <div class="grid lg:grid-cols-2 gap-0">
+
+              <div class="flex flex-col gap-[10px] items-center justify-center h-80 lg:h-auto justify-center">
+                <img src="/public/card1.png" alt="" class="w-full">
+                 <div class="flex flex-wrap gap-3 mb-6">
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/cart.svg" alt=""> Продукты 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/book.svg" alt=""> Образование 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/medicine.svg" alt=""> Медицина 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/ball.svg" alt=""> Спорт 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/play.svg" alt=""> Развлечения 6
+                  </div>
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border border-[#A8A8A8] rounded-[8px] text-sm hover:border-[#DC3F3F] transition"
+                  >
+                    <img src="/public/tree.svg" alt=""> Парки 6
+                  </div>
+                </div>
+              </div>
+
+             <div>
+              <div class="p-8 flex justify-between">
+                <div>
+                <h3 class="text-3xl font-bold text-[#222222] mb-2">
+                  ЖК Чаркова 72
+                </h3>
+                <p class="text-[#DC3F3F] text-sm mb-6 font-medium">
+                  100 квартир от застройщика «Астон»
+                </p>
+                </div>
+                <div>
+                <div class="mb-6">
+                  <p class="text-4xl font-bold text-[#222222]">
+                    от 4 377 600 ₽
+                  </p>
+                  <p class="text-sm text-[#A8A8A8] mt-1">
+                    В ипотеку от 13 760 ₽ / мес
+                  </p>
+                </div>
+
+                <p class="text-sm text-[#222222] mb-6 font-medium">
+                  3 квартал 2024 — 3 квартал 2025
+                </p>
+                </div>
+                </div>
+
+                <div class="space-y-3 mb-6 p-8">
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">Студии</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">1-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">2-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium">3-комнатные</span>
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#DC3F3F] font-medium"
+                      >4-комнатные +</span
+                    >
+                    <span class="text-sm font-medium">от 4,4 млн ₽</span>
+                  </div>
+                </div>
+
+
+                <div class="flex justify-between items-center p-8">
+                <p class="text-sm text-[#A8A8A8] mb-6">
+                   Тюмень, Чаркова 72 — 1.1
+                </p>
+
+                <button
+                  class=" py-3 px-[20px] bg-[#DC3F3F] text-white rounded-lg hover:bg-[#C02F2F] transition font-semibold shadow-lg"
+                >
+                  Подробнее
+                </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-[#222222] mb-8">
+          Карта жилых комплексов Тюмени
+        </h2>
+        <div class="flex justify-center items-center w-full">
+          <img src="/public/map.png" alt="">
+        </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white border-t-2 border-blue-100">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-[#222222] mb-2">
+          Ипотечные программы
+        </h2>
+        <p class="text-[#A8A8A8] mb-8">
+          Расчёты являются приблизительными. За точной информацией обращайтесь в
+          офис продаж по тел. +7 812 604-25-68
+        </p>
+
+        <div class="overflow-x-auto">
+          <table
+            class="w-full bg-white rounded-lg overflow-hidden shadow-primary"
+          >
+            <thead class="">
+              <tr class="border-b">
+                <th
+                  class="px-6 py-4 text-left text-sm text-[#A8A8A8] font-medium"
+                >
+                  Программа
+                </th>
+                <th
+                  class="px-6 py-4 text-left text-sm text-[#A8A8A8] font-medium"
+                >
+                  Ставка
+                </th>
+                <th
+                  class="px-6 py-4 text-left text-sm text-[#A8A8A8] font-medium"
+                >
+                  Первый взнос
+                </th>
+                <th
+                  class="px-6 py-4 text-left text-sm text-[#A8A8A8] font-medium"
+                >
+                  Срок, лет
+                </th>
+                <th
+                  class="px-6 py-4 text-left text-sm text-[#A8A8A8] font-medium"
+                >
+                  Платёж руб./мес.
+                </th>
+                <th class="px-6 py-4"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b hover:bg-gray-50 transition">
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                   <div>
+                    <img src="/public/bank.svg" alt="">
+                   </div>
+                    <span class="font-medium">Абсолют Банк</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4 text-sm">от 5.69%</td>
+                <td class="px-6 py-4 text-sm">от 20.1%</td>
+                <td class="px-6 py-4 text-sm">до 30</td>
+                <td class="px-6 py-4 text-sm font-medium">от 16 251</td>
+                <td class="px-6 py-4">
+                  <button
+                    class="px-4 py-2 border-2 border-[#DC3F3F] text-[#DC3F3F] rounded hover:bg-[#DC3F3F] hover:text-white transition text-sm font-medium"
+                  >
+                    Подробнее
+                  </button>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-gray-50 transition">
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                   <div>
+                    <img src="/public/bank.svg" alt="">
+                   </div>
+
+                    <span class="font-medium">Абсолют Банк</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4 text-sm">от 5.69%</td>
+                <td class="px-6 py-4 text-sm">от 20.1%</td>
+                <td class="px-6 py-4 text-sm">до 30</td>
+                <td class="px-6 py-4 text-sm font-medium">от 16 251</td>
+                <td class="px-6 py-4">
+                  <button
+                    class="px-4 py-2 border-2 border-[#DC3F3F] text-[#DC3F3F] rounded hover:bg-[#DC3F3F] hover:text-white transition text-sm font-medium"
+                  >
+                    Подробнее
+                  </button>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-gray-50 transition">
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                    <div>
+                    <img src="/public/bank.svg" alt="">
+                   </div>
+                    <span class="font-medium">Абсолют Банк</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4 text-sm">от 5.69%</td>
+                <td class="px-6 py-4 text-sm">от 20.1%</td>
+                <td class="px-6 py-4 text-sm">до 30</td>
+                <td class="px-6 py-4 text-sm font-medium">от 16 251</td>
+                <td class="px-6 py-4">
+                  <button
+                    class="px-4 py-2 border-2 border-[#DC3F3F] text-[#DC3F3F] rounded hover:bg-[#DC3F3F] hover:text-white transition text-sm font-medium"
+                  >
+                    Подробнее
+                  </button>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-gray-50 transition">
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                   <div>
+                    <img src="/public/bank.svg" alt="">
+                   </div>
+                    <span class="font-medium">Абсолют Банк</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4 text-sm">от 5.69%</td>
+                <td class="px-6 py-4 text-sm">от 20.1%</td>
+                <td class="px-6 py-4 text-sm">до 30</td>
+                <td class="px-6 py-4 text-sm font-medium">от 16 251</td>
+                <td class="px-6 py-4">
+                  <button
+                    class="px-4 py-2 border-2 border-[#DC3F3F] text-[#DC3F3F] rounded hover:bg-[#DC3F3F] hover:text-white transition text-sm font-medium"
+                  >
+                    Подробнее
+                  </button>
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-gray-50 transition">
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                    <div>
+                    <img src="/public/bank.svg" alt="">
+                   </div>
+                    <span class="font-medium">Абсолют Банк</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4 text-sm">от 5.69%</td>
+                <td class="px-6 py-4 text-sm">от 20.1%</td>
+                <td class="px-6 py-4 text-sm">до 30</td>
+                <td class="px-6 py-4 text-sm font-medium">от 16 251</td>
+                <td class="px-6 py-4">
+                  <button
+                    class="px-4 py-2 border-2 border-[#DC3F3F] text-[#DC3F3F] rounded hover:bg-[#DC3F3F] hover:text-white transition text-sm font-medium"
+                  >
+                    Подробнее
+                  </button>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50 transition">
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-3">
+                    <div>
+                    <img src="/public/bank.svg" alt="">
+                   </div>
+                    <span class="font-medium">Абсолют Банк</span>
+                  </div>
+                </td>
+                <td class="px-6 py-4 text-sm">от 5.69%</td>
+                <td class="px-6 py-4 text-sm">от 20.1%</td>
+                <td class="px-6 py-4 text-sm">до 30</td>
+                <td class="px-6 py-4 text-sm font-medium">от 16 251</td>
+                <td class="px-6 py-4">
+                  <button
+                    class="px-4 py-2 border-2 border-[#DC3F3F] text-[#DC3F3F] rounded hover:bg-[#DC3F3F] hover:text-white transition text-sm font-medium"
+                  >
+                    Подробнее
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="text-center mt-8">
+          <button
+            class="px-10 py-3 bg-[#DC3F3F] text-white rounded-lg hover:bg-[#C02F2F] transition font-semibold shadow-lg"
+          >
+            Показать еще
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-[#DC3F3F] text-white relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute top-10 right-20 w-64 h-64 bg-white rounded-[8px] blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-10 left-20 w-48 h-48 bg-white rounded-[8px] blur-3xl"
+        ></div>
+      </div>
+      <div class="container mx-auto relative">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-4xl font-bold mb-4">
+            Мы готовы ответить<br />на все Ваши вопросы
+          </h2>
+          <div class="grid md:grid-cols-3 gap-4 mt-8">
+            <input
+              type="text"
+              placeholder="Имя"
+              class="px-6 py-4 rounded-lg text-[#222222] outline-none focus:ring-2 focus:ring-white/50 transition"
+            />
+            <input
+              type="tel"
+              placeholder="+7 ___ __ __"
+              class="px-6 py-4 rounded-lg text-[#222222] outline-none focus:ring-2 focus:ring-white/50 transition"
+            />
+            <button
+              class="px-8 py-4 bg-white text-[#DC3F3F] rounded-lg font-bold hover:bg-gray-100 transition shadow-lg"
+            >
+              Отправить
+            </button>
+          </div>
+          <p class="text-sm mt-4 opacity-90">
+            Нажимая кнопку «Отправить», вы подтверждаете, что согласны на
+            обработку персональных данных.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="py-16 bg-white">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-[#222222] mb-10">Отзывы</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition">
+            <div class="flex items-center gap-4 mb-6">
+              <img src="/public/man.png" alt="">
+              <div>
+                <h4 class="font-bold text-[#222222]">Максим</h4>
+                <p class="text-sm text-[#A8A8A8]">Кузнецов</p>
+              </div>
+            </div>
+            <p class="text-[#222222] leading-relaxed mb-4">
+              Я хотел бы поделиться своим положительным опытом сотрудничества с
+              риелтором. Работа данного специалиста оказалась на самом высоком
+              уровне, и я остался очень доволен результатом его работы. Риелтор
+              проявил глубокие знания в области недвижимости
+            </p>
+            <a
+              href="#"
+              class="text-[#DC3F3F] text-sm font-medium hover:underline"
+              >Читать отзыв</a
+            >
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition">
+            <div class="flex items-center gap-4 mb-6">
+              <img src="/public/man.png" alt="">
+              <div>
+                <h4 class="font-bold text-[#222222]">Максим</h4>
+                <p class="text-sm text-[#A8A8A8]">Кузнецов</p>
+              </div>
+            </div>
+            <p class="text-[#222222] leading-relaxed mb-4">
+              Я хотел бы поделиться своим положительным опытом сотрудничества с
+              риелтором. Работа данного специалиста оказалась на самом высоком
+              уровне, и я остался очень доволен результатом его работы. Риелтор
+              проявил глубокие знания в области недвижимости
+            </p>
+            <a
+              href="#"
+              class="text-[#DC3F3F] text-sm font-medium hover:underline"
+              >Читать отзыв</a
+            >
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition">
+            <div class="flex items-center gap-4 mb-6">
+              <img src="/public/man.png" alt="">
+              <div>
+                <h4 class="font-bold text-[#222222]">Максим</h4>
+                <p class="text-sm text-[#A8A8A8]">Кузнецов</p>
+              </div>
+            </div>
+            <p class="text-[#222222] leading-relaxed mb-4">
+              Я хотел бы поделиться своим положительным опытом сотрудничества с
+              риелтором. Работа данного специалиста оказалась на самом высоком
+              уровне, и я остался очень доволен результатом его работы. Риелтор
+              проявил глубокие знания в области недвижимости
+            </p>
+            <a
+              href="#"
+              class="text-[#DC3F3F] text-sm font-medium hover:underline"
+              >Читать отзыв</a
+            >
+          </div>
+        </div>
+
+
+        <div class="flex justify-end gap-3 mt-8">
+          <button
+            class="w-12 h-12 rounded-full bg-[#DC3F3F] text-white flex items-center justify-center hover:bg-[#C02F2F] transition shadow-lg"
+          >
+            ‹
+          </button>
+          <button
+            class="w-12 h-12 rounded-full bg-[#DC3F3F] text-white flex items-center justify-center hover:bg-[#C02F2F] transition shadow-lg"
+          >
+            ›
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="bg-gray-100 py-12 border-t-2 border-gray-200">
+      <div class="container mx-auto">
+        <div class="grid md:grid-cols-5 gap-8">
+
+          <div class="flex flex-col items-center justify-center gap-[10px]">
+
+            <div class="flex gap-[8px] items-center justify-center">
+          <img src="/public/logo.svg" alt="" />
+          <img src="/public/logo-text.svg" alt="" />
+        </div>
+            <div class="flex gap-2">
+          <img src="/public/vk.svg" alt="">
+          <img src="/public/wa.svg" alt="">
+          <img src="/public/tg.svg" alt="">
+        </div>
+            <button
+              class="px-6 py-2 border-2 border-[#DC3F3F] text-[#DC3F3F] rounded hover:bg-[#DC3F3F] hover:text-white transition text-sm font-medium"
+            >
+              Перезвоните мне
+            </button>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[#222222] mb-4">Пункт меню</h4>
+            <ul class="space-y-2 text-sm text-[#A8A8A8]">
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition">Главная</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition"
+                  >Все ЖК Тюмени</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition"
+                  >Карта новостроек</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition"
+                  >О компании</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[#222222] mb-4">Пункт меню</h4>
+            <ul class="space-y-2 text-sm text-[#A8A8A8]">
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition"
+                  >Пункт меню</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition"
+                  >Пункт меню</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition"
+                  >Пункт меню</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition"
+                  >Пункт меню</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[#222222] mb-4">Пункт меню</h4>
+            <ul class="space-y-2 text-sm text-[#A8A8A8]">
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition"
+                  >Пункт меню</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition"
+                  >Пункт меню</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition"
+                  >Пункт меню</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition"
+                  >Пункт меню</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-[#222222] mb-4">Пункт меню</h4>
+            <ul class="space-y-2 text-sm text-[#A8A8A8]">
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition"
+                  >Пункт меню</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition"
+                  >Пункт меню</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition"
+                  >Пункт меню</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#DC3F3F] transition"
+                  >Пункт меню</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-gray-300 text-sm text-[#A8A8A8]">
+          <p>
+            © 2016–2023, ООО «Домклик»Москва, 121170, Кутузовский проспект, д.
+            32, к. 1, ОГРН: 1187746652150 ИНН: 7736249247
+          </p>
+          <p class="mt-2">
+            Использование сайта означает согласие с
+            <a href="#" class="text-[#DC3F3F] hover:underline"
+              >Пользовательским соглашением</a
+            >
+            и
+            <a href="#" class="text-[#DC3F3F] hover:underline"
+              >Политикой обработки персональных данных</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
