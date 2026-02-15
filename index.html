@@ -12,11 +12,12 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-montserrat bg-white">
+  <body class="bg-white font-montserrat">
     <header
-      class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
+      class=""
     >
-      <div class="flex items-center gap-8">
+    <div class="flex items-center justify-between px-4 py-4 mx-auto max-w-[1530px]">
+      <div class="flex items-center justify-between gap-8">
         <div class="flex gap-[8px] items-center justify-center">
           <img src="/public/logo.svg" alt="" />
           <img src="/public/logo-text.svg" alt="" />
@@ -41,15 +42,16 @@
         >
           Перезвоните мне
         </button>
+        </div>
       </div>
     </header>
 
     <section class="relative h-[500px] overflow-hidden">
       <div
-        class="absolute inset-0 bg-[url('./public/hero-bg.png')] bg-no-repeat bg-cover bg-center"
+        class="absolute inset-0 bg-[url('/hero-bg.png')] bg-no-repeat bg-cover bg-center"
       ></div>
       <div
-        class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center"
+        class="absolute inset-0 flex items-center bg-gradient-to-r from-black/60 to-transparent"
       >
         <div class="container mx-auto">
           <div
@@ -68,7 +70,7 @@
       </div>
     </section>
 
-    <section class="py-6 border-b bg-white sticky top-0 z-10 shadow-sm">
+    <section class="sticky top-0 z-10 py-6 bg-white border-b shadow-sm">
       <div class="container mx-auto">
         <div class="flex flex-wrap items-center gap-4 ">
           <button
@@ -154,7 +156,7 @@
               <label class="block text-sm text-[#A8A8A8] mb-2 font-medium"
                 >Срок сдачи</label
               >
-              <div class="flex gap-2 flex-wrap">
+              <div class="flex flex-wrap gap-2">
                 <button
                   class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
                 >
@@ -181,7 +183,7 @@
               <label class="block text-sm text-[#A8A8A8] mb-2 font-medium"
                 >Отделка</label
               >
-              <div class="flex gap-2 flex-wrap">
+              <div class="flex flex-wrap gap-2">
                 <button
                   class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm whitespace-nowrap"
                 >
@@ -199,7 +201,7 @@
               <label class="block text-sm text-[#A8A8A8] mb-2 font-medium"
                 >Мебировка</label
               >
-              <div class="flex gap-2 flex-wrap">
+              <div class="flex flex-wrap gap-2">
                 <button
                   class="px-3 py-2 border border-[#A8A8A8] rounded hover:border-[#DC3F3F] hover:text-[#DC3F3F] transition text-sm"
                 >
@@ -215,9 +217,9 @@
             </div>
           </div>
 
-          <div class="mt-6 pt-6 ">
+          <div class="pt-6 mt-6 ">
             <span class="text-sm text-[#A8A8A8] mr-4 font-medium">Класс</span>
-            <div class="inline-flex gap-3 flex-wrap mt-2">
+            <div class="inline-flex flex-wrap gap-3 mt-2">
               <button
                 class="px-6 py-2 rounded-[8px] border-2 border-[#DC3F3F] text-[#DC3F3F] bg-[#DC3F3F]/5 font-medium"
               >
@@ -241,7 +243,7 @@
             </div>
           </div>
 
-          <div class="mt-6 pt-6 ">
+          <div class="pt-6 mt-6 ">
             <span class="text-sm text-[#A8A8A8] mr-4 font-medium">Районы</span>
             <div class="inline-flex flex-wrap gap-3 mt-2">
               <button
@@ -314,9 +316,9 @@
       <div class="container mx-auto">
         <div class="space-y-8">
           <div
-            class="bg-white rounded-2xl shadow-primary overflow-hidden border border-gray-100"
+            class="overflow-hidden bg-white border border-gray-100 rounded-2xl shadow-primary"
           >
-            <div class="grid lg:grid-cols-2 gap-0">
+            <div class="grid gap-0 lg:grid-cols-2">
 
               <div class="flex flex-col gap-[10px] items-center justify-center h-80 lg:h-auto justify-center">
                 <img src="/public/card1.png" alt="" class="w-full">
@@ -355,7 +357,7 @@
               </div>
 
              <div>
-              <div class="p-8 flex justify-between">
+              <div class="flex justify-between p-8">
                 <div>
                 <h3 class="text-3xl font-bold text-[#222222] mb-2">
                   ЖК Чаркова 72
@@ -380,24 +382,24 @@
                 </div>
                 </div>
 
-                <div class="space-y-3 mb-6 p-8">
-                  <div class="flex justify-between items-center">
+                <div class="p-8 mb-6 space-y-3">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">Студии</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">1-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">2-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">3-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium"
                       >4-комнатные +</span
                     >
@@ -405,7 +407,7 @@
                   </div>
                 </div>
 
-                <div class="flex justify-between items-center p-8">
+                <div class="flex items-center justify-between p-8">
                 <p class="text-sm text-[#A8A8A8] mb-6">
                    Тюмень, Чаркова 72 — 1.1
                 </p>
@@ -422,9 +424,9 @@
           </div>
 
           <div
-            class="bg-white rounded-2xl shadow-primary overflow-hidden border border-gray-100"
+            class="overflow-hidden bg-white border border-gray-100 rounded-2xl shadow-primary"
           >
-            <div class="grid lg:grid-cols-2 gap-0">
+            <div class="grid gap-0 lg:grid-cols-2">
 
               <div class="flex flex-col gap-[10px] items-center justify-center h-80 lg:h-auto justify-center">
                 <img src="/public/card1.png" alt="" class="w-full">
@@ -464,7 +466,7 @@
               </div>
 
              <div>
-              <div class="p-8 flex justify-between">
+              <div class="flex justify-between p-8">
                 <div>
                 <h3 class="text-3xl font-bold text-[#222222] mb-2">
                   ЖК Чаркова 72
@@ -489,24 +491,24 @@
                 </div>
                 </div>
 
-                <div class="space-y-3 mb-6 p-8">
-                  <div class="flex justify-between items-center">
+                <div class="p-8 mb-6 space-y-3">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">Студии</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">1-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">2-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">3-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium"
                       >4-комнатные +</span
                     >
@@ -514,7 +516,7 @@
                   </div>
                 </div>
 
-                <div class="flex justify-between items-center p-8">
+                <div class="flex items-center justify-between p-8">
                 <p class="text-sm text-[#A8A8A8] mb-6">
                    Тюмень, Чаркова 72 — 1.1
                 </p>
@@ -530,9 +532,9 @@
             </div>
           </div>
           <div
-            class="bg-white rounded-2xl shadow-primary overflow-hidden border border-gray-100"
+            class="overflow-hidden bg-white border border-gray-100 rounded-2xl shadow-primary"
           >
-            <div class="grid lg:grid-cols-2 gap-0">
+            <div class="grid gap-0 lg:grid-cols-2">
 
               <div class="flex flex-col gap-[10px] items-center justify-center h-80 lg:h-auto justify-center">
                 <img src="/public/card1.png" alt="" class="w-full">
@@ -572,7 +574,7 @@
               </div>
 
              <div>
-              <div class="p-8 flex justify-between">
+              <div class="flex justify-between p-8">
                 <div>
                 <h3 class="text-3xl font-bold text-[#222222] mb-2">
                   ЖК Чаркова 72
@@ -597,24 +599,24 @@
                 </div>
                 </div>
 
-                <div class="space-y-3 mb-6 p-8">
-                  <div class="flex justify-between items-center">
+                <div class="p-8 mb-6 space-y-3">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">Студии</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">1-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">2-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">3-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium"
                       >4-комнатные +</span
                     >
@@ -622,7 +624,7 @@
                   </div>
                 </div>
 
-                <div class="flex justify-between items-center p-8">
+                <div class="flex items-center justify-between p-8">
                 <p class="text-sm text-[#A8A8A8] mb-6">
                    Тюмень, Чаркова 72 — 1.1
                 </p>
@@ -638,9 +640,9 @@
             </div>
           </div>
           <div
-            class="bg-white rounded-2xl shadow-primary overflow-hidden border border-gray-100"
+            class="overflow-hidden bg-white border border-gray-100 rounded-2xl shadow-primary"
           >
-            <div class="grid lg:grid-cols-2 gap-0">
+            <div class="grid gap-0 lg:grid-cols-2">
 
               <div class="flex flex-col gap-[10px] items-center justify-center h-80 lg:h-auto justify-center">
                 <img src="/public/card1.png" alt="" class="w-full">
@@ -679,7 +681,7 @@
               </div>
 
              <div>
-              <div class="p-8 flex justify-between">
+              <div class="flex justify-between p-8">
                 <div>
                 <h3 class="text-3xl font-bold text-[#222222] mb-2">
                   ЖК Чаркова 72
@@ -704,24 +706,24 @@
                 </div>
                 </div>
 
-                <div class="space-y-3 mb-6 p-8">
-                  <div class="flex justify-between items-center">
+                <div class="p-8 mb-6 space-y-3">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">Студии</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">1-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">2-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">3-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium"
                       >4-комнатные +</span
                     >
@@ -729,7 +731,7 @@
                   </div>
                 </div>
 
-                <div class="flex justify-between items-center p-8">
+                <div class="flex items-center justify-between p-8">
                 <p class="text-sm text-[#A8A8A8] mb-6">
                    Тюмень, Чаркова 72 — 1.1
                 </p>
@@ -745,9 +747,9 @@
             </div>
           </div>
           <div
-            class="bg-white rounded-2xl shadow-primary overflow-hidden border border-gray-100"
+            class="overflow-hidden bg-white border border-gray-100 rounded-2xl shadow-primary"
           >
-            <div class="grid lg:grid-cols-2 gap-0">
+            <div class="grid gap-0 lg:grid-cols-2">
 
               <div class="flex flex-col gap-[10px] items-center justify-center h-80 lg:h-auto justify-center">
                 <img src="/public/card1.png" alt="" class="w-full">
@@ -787,7 +789,7 @@
               </div>
 
              <div>
-              <div class="p-8 flex justify-between">
+              <div class="flex justify-between p-8">
                 <div>
                 <h3 class="text-3xl font-bold text-[#222222] mb-2">
                   ЖК Чаркова 72
@@ -811,24 +813,24 @@
                 </p>
                 </div>
                 </div>
-                <div class="space-y-3 mb-6 p-8">
-                  <div class="flex justify-between items-center">
+                <div class="p-8 mb-6 space-y-3">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">Студии</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">1-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">2-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">3-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium"
                       >4-комнатные +</span
                     >
@@ -836,7 +838,7 @@
                   </div>
                 </div>
 
-                <div class="flex justify-between items-center p-8">
+                <div class="flex items-center justify-between p-8">
                 <p class="text-sm text-[#A8A8A8] mb-6">
                    Тюмень, Чаркова 72 — 1.1
                 </p>
@@ -852,9 +854,9 @@
             </div>
           </div>
           <div
-            class="bg-white rounded-2xl shadow-primary overflow-hidden border border-gray-100"
+            class="overflow-hidden bg-white border border-gray-100 rounded-2xl shadow-primary"
           >
-            <div class="grid lg:grid-cols-2 gap-0">
+            <div class="grid gap-0 lg:grid-cols-2">
 
               <div class="flex flex-col gap-[10px] items-center justify-center h-80 lg:h-auto justify-center">
                 <img src="/public/card1.png" alt="" class="w-full">
@@ -893,7 +895,7 @@
               </div>
 
              <div>
-              <div class="p-8 flex justify-between">
+              <div class="flex justify-between p-8">
                 <div>
                 <h3 class="text-3xl font-bold text-[#222222] mb-2">
                   ЖК Чаркова 72
@@ -918,24 +920,24 @@
                 </div>
                 </div>
 
-                <div class="space-y-3 mb-6 p-8">
-                  <div class="flex justify-between items-center">
+                <div class="p-8 mb-6 space-y-3">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">Студии</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">1-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">2-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium">3-комнатные</span>
                     <span class="text-sm font-medium">от 4,4 млн ₽</span>
                   </div>
-                  <div class="flex justify-between items-center">
+                  <div class="flex items-center justify-between">
                     <span class="text-[#DC3F3F] font-medium"
                       >4-комнатные +</span
                     >
@@ -944,7 +946,7 @@
                 </div>
 
 
-                <div class="flex justify-between items-center p-8">
+                <div class="flex items-center justify-between p-8">
                 <p class="text-sm text-[#A8A8A8] mb-6">
                    Тюмень, Чаркова 72 — 1.1
                 </p>
@@ -967,7 +969,7 @@
         <h2 class="text-3xl font-bold text-[#222222] mb-8">
           Карта жилых комплексов Тюмени
         </h2>
-        <div class="flex justify-center items-center w-full">
+        <div class="flex items-center justify-center w-full">
           <img src="/public/map.png" alt="">
         </div>
 
@@ -988,7 +990,7 @@
 
         <div class="overflow-x-auto">
           <table
-            class="w-full bg-white rounded-lg overflow-hidden shadow-primary"
+            class="w-full overflow-hidden bg-white rounded-lg shadow-primary"
           >
             <thead class="">
               <tr class="border-b">
@@ -1021,7 +1023,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="border-b hover:bg-gray-50 transition">
+              <tr class="transition border-b hover:bg-gray-50">
                 <td class="px-6 py-4">
                   <div class="flex items-center gap-3">
                    <div>
@@ -1042,7 +1044,7 @@
                   </button>
                 </td>
               </tr>
-              <tr class="border-b hover:bg-gray-50 transition">
+              <tr class="transition border-b hover:bg-gray-50">
                 <td class="px-6 py-4">
                   <div class="flex items-center gap-3">
                    <div>
@@ -1064,7 +1066,7 @@
                   </button>
                 </td>
               </tr>
-              <tr class="border-b hover:bg-gray-50 transition">
+              <tr class="transition border-b hover:bg-gray-50">
                 <td class="px-6 py-4">
                   <div class="flex items-center gap-3">
                     <div>
@@ -1085,7 +1087,7 @@
                   </button>
                 </td>
               </tr>
-              <tr class="border-b hover:bg-gray-50 transition">
+              <tr class="transition border-b hover:bg-gray-50">
                 <td class="px-6 py-4">
                   <div class="flex items-center gap-3">
                    <div>
@@ -1106,7 +1108,7 @@
                   </button>
                 </td>
               </tr>
-              <tr class="border-b hover:bg-gray-50 transition">
+              <tr class="transition border-b hover:bg-gray-50">
                 <td class="px-6 py-4">
                   <div class="flex items-center gap-3">
                     <div>
@@ -1127,7 +1129,7 @@
                   </button>
                 </td>
               </tr>
-              <tr class="hover:bg-gray-50 transition">
+              <tr class="transition hover:bg-gray-50">
                 <td class="px-6 py-4">
                   <div class="flex items-center gap-3">
                     <div>
@@ -1152,7 +1154,7 @@
           </table>
         </div>
 
-        <div class="text-center mt-8">
+        <div class="mt-8 text-center">
           <button
             class="px-10 py-3 bg-[#DC3F3F] text-white rounded-lg hover:bg-[#C02F2F] transition font-semibold shadow-lg"
           >
@@ -1171,12 +1173,12 @@
           class="absolute bottom-10 left-20 w-48 h-48 bg-white rounded-[8px] blur-3xl"
         ></div>
       </div>
-      <div class="container mx-auto relative">
+      <div class="container relative mx-auto">
         <div class="max-w-4xl mx-auto">
-          <h2 class="text-4xl font-bold mb-4">
+          <h2 class="mb-4 text-4xl font-bold">
             Мы готовы ответить<br />на все Ваши вопросы
           </h2>
-          <div class="grid md:grid-cols-3 gap-4 mt-8">
+          <div class="grid gap-4 mt-8 md:grid-cols-3">
             <input
               type="text"
               placeholder="Имя"
@@ -1193,7 +1195,7 @@
               Отправить
             </button>
           </div>
-          <p class="text-sm mt-4 opacity-90">
+          <p class="mt-4 text-sm opacity-90">
             Нажимая кнопку «Отправить», вы подтверждаете, что согласны на
             обработку персональных данных.
           </p>
@@ -1205,8 +1207,8 @@
     <section class="py-16 bg-white">
       <div class="container mx-auto">
         <h2 class="text-3xl font-bold text-[#222222] mb-10">Отзывы</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition">
+        <div class="grid gap-8 md:grid-cols-3">
+          <div class="p-6 transition bg-gray-50 rounded-xl hover:shadow-lg">
             <div class="flex items-center gap-4 mb-6">
               <img src="/public/man.png" alt="">
               <div>
@@ -1227,7 +1229,7 @@
             >
           </div>
 
-          <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition">
+          <div class="p-6 transition bg-gray-50 rounded-xl hover:shadow-lg">
             <div class="flex items-center gap-4 mb-6">
               <img src="/public/man.png" alt="">
               <div>
@@ -1248,7 +1250,7 @@
             >
           </div>
 
-          <div class="bg-gray-50 p-6 rounded-xl hover:shadow-lg transition">
+          <div class="p-6 transition bg-gray-50 rounded-xl hover:shadow-lg">
             <div class="flex items-center gap-4 mb-6">
               <img src="/public/man.png" alt="">
               <div>
@@ -1287,9 +1289,9 @@
     </section>
 
 
-    <footer class="bg-gray-100 py-12 border-t-2 border-gray-200">
+    <footer class="py-12 bg-gray-100 border-t-2 border-gray-200">
       <div class="container mx-auto">
-        <div class="grid md:grid-cols-5 gap-8">
+        <div class="grid gap-8 md:grid-cols-5">
 
           <div class="flex flex-col items-center justify-center gap-[10px]">
 
